@@ -24,7 +24,7 @@
           //variable initializations here
           myX = x;
           myY = y;
-         roll();
+          roll();
       }
   }
       void roll()
@@ -36,7 +36,7 @@
       {
         fill(220, 0, 0);
         stroke(0,255,0);
-        rect(myX,myY,35,35,10);
+        rect(myX,myY,45,45,10);
         if(num == 1) {
          ellipse(myX,myY,10,10);
         } else if (num == 2) {
@@ -45,6 +45,7 @@
       }   else if (num == 3) {
           ellipse(myX - 2.5,myY,10,10);
           ellipse(myX + 2.5,myY,10,10);
+          ellipse(myX,myY - 5,10,10);
       }  else if (num == 4) {
           ellipse(myX - 2.5,myY,10,10);
           ellipse(myX + 2.5,myY,10,10);
