@@ -53,7 +53,6 @@
           myX = x;
           myY = y;
       }
-  }
       void roll()
       {
           //your code here
