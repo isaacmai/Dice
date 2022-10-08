@@ -2,10 +2,11 @@
   {
       size(500,500);
       noLoop();
-      int dot;
-      bob = new Die(10,10);
+      Die first;
   }
-  Die bob;
+      int num;
+      int total = 0;
+  }
   void draw()
   {
     background(0);
@@ -47,7 +48,7 @@
   class Die //models one single dice cube
   {
      //member variable declarations here
-      int myX,myY,num;
+      int myX,myY;
       Die(int x, int y) //constructor
       {
           //variable initializations here
