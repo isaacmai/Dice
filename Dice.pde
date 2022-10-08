@@ -2,11 +2,10 @@
   {
       size(500,500);
       noLoop();
-      Die first;
   }
+      Die first; 
       int num;
       int total = 0;
-  }
   void draw()
   {
     background(0);
