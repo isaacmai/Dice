@@ -35,7 +35,7 @@
      }
      }
      fill(255,255,255);
-     text("Total: " + total, 225, 450, 100, 100);
+     text("Total: " + total, 225, 475, 100, 100);
      
      }
   void mousePressed()
