@@ -61,7 +61,7 @@
       }
       void show()
       {
-        roll();
+        bob.roll();
         fill(220, 0, 0);
         stroke(0,255,0);
         rect(myX,myY,50,50,10);
