@@ -3,18 +3,17 @@
       size(500,500);
       noLoop();
   }
-      Die first; 
-      int num;
       int total = 0;
+      int num;
+      Die bob; 
   void draw()
   {
     background(0);
-    bob.show();
       //your code here
      for(int y = 0; y <= 400; y = y+50){
      for (int x = 0; x <= 450; x = x+50){
-     first = new Die(x,y);
-     first.show();
+     bob = new Die(x,y);
+     bob.show();
      if (num == 1){
      total = total + 1;
      }
