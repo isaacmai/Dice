@@ -1,7 +1,8 @@
   void setup()
   {
-      size(300,300);
+      size(500,500);
       noLoop();
+      int dot;
       bob = new Die(10,10);
   }
   Die bob;
@@ -10,10 +11,38 @@
     background(0);
     bob.show();
       //your code here
-  }
+     for(int y = 0; y <= 400; y = y+50){
+     for (int x = 0; x <= 450; x = x+50){
+     first = new Die(x,y);
+     first.show();
+     if (num == 1){
+     total = total + 1;
+     }
+     if (num == 2){
+     total = total + 2;
+     }
+     if (num == 3){
+     total = total + 3;
+     }
+     if (num == 4){
+     total = total + 4;
+     }
+     if (num == 5){
+     total = total + 5;
+     }
+     if (num == 6){
+     total = total + 6;
+     }
+     }
+     }
+     fill(255,255,255);
+     text("Total: " + total, 225, 450, 100, 100);
+     
+     }
   void mousePressed()
   {
       redraw();
+      total = 0;
   }
   class Die //models one single dice cube
   {
@@ -36,24 +65,45 @@
       {
         fill(220, 0, 0);
         stroke(0,255,0);
-        rect(myX,myY,45,45,10);
-        if(num == 1) {
-         ellipse(myX,myY,10,10);
-        } else if (num == 2) {
-          ellipse(myX - 2.5,myY,10,10);
-          ellipse(myX + 2.5,myY,10,10);
-      }   else if (num == 3) {
-          ellipse(myX - 2.5,myY,10,10);
-          ellipse(myX + 2.5,myY,10,10);
-          ellipse(myX,myY - 5,10,10);
-      }  else if (num == 4) {
-          ellipse(myX - 2.5,myY,10,10);
-          ellipse(myX + 2.5,myY,10,10);
-      }  else if (num == 5) {
-          ellipse(myX - 2.5,myY,10,10);
-          ellipse(myX + 2.5,myY,10,10);
-      }  else {
-          ellipse(myX - 2.5,myY,10,10);
-          ellipse(myX + 2.5,myY,10,10);
-      }
-  }
+        rect(myX,myY,50,50,10);
+        bob.roll();
+        if (num == 1){
+        fill(0);
+        ellipse(myX+25,myY+25,10,10);
+        }
+        if (num == 2){
+        fill(0);
+        ellipse(myX+18,myY+25,10,10);
+        ellipse(myX+32,myY+25,10,10);
+        }
+        if (num == 3){
+        fill(0);
+        ellipse(myX+15,myY+13,10,10);
+        ellipse(myX+25,myY+23,10,10);
+        ellipse(myX+35,myY+33,10,10);
+        }
+        if (num == 4){
+        fill(0);
+        ellipse(myX+18,myY+18,10,10);
+        ellipse(myX+18,myY+32,10,10);
+        ellipse(myX+32,myY+18,10,10);
+        ellipse(myX+32,myY+32,10,10);
+        }
+        if (num == 5){
+        fill(0);
+        ellipse(myX+15,myY+15,10,10);
+        ellipse(myX+15,myY+35,10,10);
+        ellipse(myX+35,myY+15,10,10);
+        ellipse(myX+35,myY+35,10,10);
+        ellipse(myX+25,myY+25,10,10);
+        }
+        if (num == 6){
+        fill(0);
+        ellipse(myX+18,myY+15,10,10);
+        ellipse(myX+32,myY+15,10,10);
+        ellipse(myX+18,myY+25,10,10);
+        ellipse(myX+32,myY+25,10,10);
+        ellipse(myX+18,myY+35,10,10);
+        ellipse(myX+32,myY+35,10,10);
+        }
+     }
