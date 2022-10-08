@@ -56,12 +56,11 @@
   }
       void roll()
       {
-        num = (int)(Math.random()*6)+1;
           //your code here
       }
       void show()
       {
-        bob.roll();
+        num = (int)(Math.random()*6)+1;
         fill(220, 0, 0);
         stroke(0,255,0);
         rect(myX,myY,50,50,10);
@@ -104,4 +103,5 @@
         ellipse(myX+18,myY+35,10,10);
         ellipse(myX+32,myY+35,10,10);
         }
+     }
      }
