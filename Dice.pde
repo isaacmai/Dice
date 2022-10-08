@@ -67,7 +67,6 @@
         fill(220, 0, 0);
         stroke(0,255,0);
         rect(myX,myY,50,50,10);
-        bob.roll();
         if (num == 1){
         fill(0);
         ellipse(myX+25,myY+25,10,10);
