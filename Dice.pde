@@ -53,7 +53,6 @@
           //variable initializations here
           myX = x;
           myY = y;
-          roll();
       }
   }
       void roll()
@@ -63,6 +62,7 @@
       }
       void show()
       {
+        roll();
         fill(220, 0, 0);
         stroke(0,255,0);
         rect(myX,myY,50,50,10);
